@@ -1,0 +1,18 @@
+// Classe Pai (Superclasse)
+public class Animal {
+    String nome;
+
+    public void emitirSom() {
+        System.out.println("O animal faz um som.");
+    }
+}
+
+// Subclasse (Filha) - "Cachorro É UM Animal"
+public class Cachorro extends Animal {
+    
+    // Sobrescreve apenas o som específico do cachorro
+    @Override
+    public void emitirSom() {
+        System.out.println(nome + " faz: Au Au!");
+    }
+}
